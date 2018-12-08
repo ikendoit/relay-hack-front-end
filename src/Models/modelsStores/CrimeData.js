@@ -1,3 +1,4 @@
+const URL_BACKEND = process.env.REACT_APP_BACKEND_URL
 export default {
   state: {
     data: []
@@ -8,7 +9,7 @@ export default {
     },
   }, 
   effects: (dispatch) => ({
-    async loadData() => {
+    async loadData() {
       try {
         const result = await fetch(`${URL_BACKEND}`)
         console.log('loaded from back-end: ',result)
@@ -18,4 +19,4 @@ export default {
       }
     }
   })
-})
+}

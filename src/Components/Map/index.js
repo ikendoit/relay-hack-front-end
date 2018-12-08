@@ -7,7 +7,6 @@ const apiKey =
 
 const WrappedMap = withScriptjs(withGoogleMap(Map))
 
-  console.log(apiKey)
 class GoogleMap extends React.Component {
 	url = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=3.exp&libraries=geometry,drawing,places`
 	get loadingElement() {
@@ -18,7 +17,7 @@ class GoogleMap extends React.Component {
 	}
 	get mapElement() {
 		return (
-			<div style={{ height: 600, position: 'relative' }} />
+			<div style={{ height: 500, position: 'relative' }} />
 		)
 	}
 
