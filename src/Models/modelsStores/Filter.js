@@ -5,7 +5,7 @@ export default {
     fromMonth: null,
     toMonth: null,
   },
-  reducer: {
+  reducers: {
     setFromYear(state, year) {
       return {
         ...state,
